@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Денис Суслов](https://up.htmlacademy.ru/htmlcss/31/user/1649089).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Кислый](https://htmlacademy.ru/profile/smart-grizzly).
 
 ---
 
