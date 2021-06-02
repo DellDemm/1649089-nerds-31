@@ -1,4 +1,4 @@
-:root{
+:root {
 --classic-black: #000000;
 --coral: #FB565A;
 --coral-dark:#E74246;
@@ -12,10 +12,11 @@
 --grey:#666666;
 --white:#FFFFFF;
 }
-body{
+
+body {
 min-width: 1440px;
-margin: 0%;
-padding: 0%;
+margin: 0;
+padding: 0;
 font-family:"Roboto", Arial, sans-serif;
 font-size: 16px;
 line-height: 24px;
@@ -23,158 +24,199 @@ font-weight: 400;
 text-transform: uppercase;
 background-color: var(--white);
 }
-.links{
+
+.links {
     text-decoration: none;
 }
-.main-nav{
+
+.main-nav {
     font-size: 16px;
     line-height: 30px;
     font-weight: 500;
     color: var(--classic-black);
 }
-.cite-navigation{
+
+.cite-navigation {
     list-style: none;
     color: var(--classic-black);
 }
-.cite-navigation a:link{
+
+.cite-navigation a:link {
     color: var(--classic-black);
 }
-.cite-navigation a:visited{
+
+.cite-navigation a:visited {
     color: var(--classic-black);
 }
-.cite-navigation a:hover{
+
+.cite-navigation a:hover {
     color: var(--coral);
 }
-.cite-navigation a:focus{
+
+.cite-navigation a:focus {
     color: var(--classic-black);
     opacity: 0.3;
 }
-.slider h1{
+
+.slider h1 {
     font-size: 55px;
     line-height: 50px;
     font-weight: 500;
 }
-.services-list{
+
+.services-list {
     list-style: none;
 }
-.services-list h3{
+
+.services-list h3 {
     font-size: 24px;
     line-height: 30px;
 }
+
 .button {
     width: 160px;
     height: 50px;
 }
-.slider-button{
+.slider-button {
     width: 240px;
     height: 50px;
     background-color: var(--coral);
 }
-.slider-button:link{
+
+.slider-button:link {
     background-color: var(--coral);
 }
-.slider-button:visited{
+
+.slider-button:visited {
 background-color: var(--coral);
 }
-.slider-button:hover{
+
+.slider-button:hover {
 background-color: var(--coral-dark);
 }
-.slider-button:focus{
+
+.slider-button:focus {
 background-color: var(--red);
 }
-.button-site:link{
+
+.button-site:link {
     background-color: var(--coral);
 }
-.button-site{
+
+.button-site {
     background-color: var(--coral);
 }
-.button-site:hover{
+
+.button-site:hover {
     background-color: var(--coral-dark);
 }
-.button-site:focus{
+
+.button-site:focus {
     background-color: var(--red);
 }
-.button-app{
+
+.button-app {
     background-color: var(--lime);
 }
-.button-app:link{
+
+.button-app:link {
     background-color:var(--lime);
 }
-.button-app:visited{
+
+.button-app:visited {
     background-color: var(--lime);
 }
-.button-app:hover{
+
+.button-app:hover {
     background-color: var(--lawngreen);
 }
-.button-app:focus{
+
+.button-app:focus {
     background-color: var(--limegreen);
 }
-.button-pres{
+
+.button-pres {
     background-color: var(--palegoldenrod);
 }
-.button-pres:link{
+
+.button-pres:link {
     background-color: var(--palegoldenrod);
 }
-.button-pres:visited{
+
+.button-pres:visited {
     background-color: var(--palegoldenrod);
 }
-.button-pres:hover{
+
+.button-pres:hover {
     background-color: var(--khaki);
 }
-.button-pres:focus{
+
+.button-pres:focus {
     background-color: var(--dark-khaki);
 }
-.company-info h2{
+
+.company-info h2 {
     font-size: 45px;
     line-height: 45px;
     font-weight: 500;
 }
-.persent{
+
+.percent {
     font-size: 45px;
     line-height: 64px;
     font-weight: 700;
 }
-.table-inf{
+
+.table-inf {
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
 }
-.footer-contacts{
+
+.footer-contacts {
     text-decoration: none;
 }
-.adress, .footer-phone{
+
+.address, .footer-phone {
     color: var(--grey);
     font-size: 16px;
     line-height: 18px;
 }
-.button-sent{
+
+.button-send {
     background-color: var(--coral);
     width: 219px;
     height: 50px;
 }
-.button-sent:link,
-.button-sent:visited{
+
+.button-send:link,
+.button-send:visited {
     background-color: var(--coral);
 }
+
 .social-button:hover,
 .social-button:focus {
     text-decoration:none;
 }
-.frends-follow{
+
+.friends-follow {
     font-size: 36px;
     line-height: 36px;
     font-weight: 700;
 }
-.text-footer{
+
+.text-footer {
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
 }
+
 .feedback h2 {
     font-size: 45px;
     line-height: 53px;
     font-weight: 700;
  }
-.button-send-footer{
+
+.button-send-footer {
     background-color: var(--coral);
 }
