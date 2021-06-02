@@ -1,5 +1,6 @@
 :root {
 --classic-black: #000000;
+--classic-gray: #283136;
 --coral: #FB565A;
 --coral-dark:#E74246;
 --red:#D7373B;
@@ -11,6 +12,11 @@
 --dark-khaki:#E5A722;
 --grey:#666666;
 --white:#FFFFFF;
+--black:#4D4D4D;
+--main-gray:#DFDFDF;
+--main-black:#D5D5D5;
+--background-white: #EEEEEE;
+
 }
 
 body {
@@ -56,6 +62,7 @@ background-color: var(--white);
 .cite-navigation a:focus {
     color: var(--classic-black);
     opacity: 0.3;
+    text-decoration: underline;
 }
 
 .slider h1 {
@@ -88,15 +95,15 @@ background-color: var(--white);
 }
 
 .slider-button:visited {
-background-color: var(--coral);
+    background-color: var(--coral);
 }
 
 .slider-button:hover {
-background-color: var(--coral-dark);
+    background-color: var(--coral-dark);
 }
 
 .slider-button:focus {
-background-color: var(--red);
+    background-color: var(--red);
 }
 
 .button-site:link {
@@ -220,3 +227,199 @@ background-color: var(--red);
 .button-send-footer {
     background-color: var(--coral);
 }
+
+.main-catalog {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+}
+
+.filters {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.filter-price {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color:var(--classic-gray);
+    background: var(--white);
+    border-radius: 3px;
+    border-color: var(--white);
+    box-shadow:var(--white);
+}
+
+.filter {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    list-style: none;
+    color: var(--classic-black);
+}
+
+.sort {
+    text-decoration: none;
+}
+
+.sort:link,
+.sort:focus {
+    opacity: 1;
+    color: var(--classic-black);
+}
+
+.sort:visited {
+    opacity: 0.3;
+    color: var(--classic-black);
+}
+
+.sort:hover {
+    opacity: 0.6;
+    color: var(--classic-black);
+}
+
+.column {
+    border: none;
+}
+
+.grid, .features {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.grid-filter,
+.features-filter {
+   list-style: none;
+   font-size: 16px;
+   line-height: 20px;
+   font-weight: 400;
+   color: var(--classic-gray);
+}
+
+.grid-filter:link,
+.features-filter:link,
+.grid-filter:visited,
+.features-filter:visited {
+    opacity: 0.4;
+    color: var(--black);
+}
+
+.features-filter:hover,
+.grid-filter:hover {
+    opacity: 1;
+    color: var(--black);
+}
+
+.button-present {
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    width: 260px;
+    height: 50px;
+}
+
+.button-present:link,
+.button-present:visited {
+    border: none;
+}
+
+.button-present:hover {
+    border: var(--main-gray);
+}
+
+.button-present:focus {
+    border: var(--main-black);
+    opacity: 0.3;
+}
+
+.product {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--grey);
+}
+
+.name-product {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    color: var(--classic-black);
+}
+
+.button-buy {
+    color: var(--white);
+    background: var(--coral);
+    width: 200px;
+    height: 50px;
+    border-radius: 3px;
+}
+
+.button-buy:link,
+.button-buy:visited {
+    background: var(--coral);
+}
+
+.button-buy:hover {
+    background: var(--coral-dark);
+}
+
+.button-buy:focus {
+    background: var(--red);
+}
+
+.shop-pages {
+    list-style: none;
+}
+
+.shop-pages a {
+    text-decoration: none;
+}
+
+.shop-page {
+    width: 50px;
+    height: 50px;
+    border: 3px;
+    border-radius: 3px;
+    background-color:var(--background-white);
+    text-align: center;
+    line-height: 50px;
+}
+
+.shop-page-next {
+    width: 260px;
+    height: 50px;
+    border: 3px;
+    border-radius: 3px;
+    background-color: var(--background-white);
+    text-align: center;
+    line-height: 50px;
+}
+
+.shop-pages .links {
+    color: var(--classic-black);
+}
+
+.shop-page:link,
+.shop-page:visited {
+    background-color:var(--background-white);
+}
+
+.shop-page-next:link,
+.shop-page-next:visited {
+    background-color: var(--background-white);
+}
+
+.shop-page:hover,
+.shop-page-next:hover {
+    background-color:var(--main-gray);
+}
+
+.shop-page:focus,
+.shop-page-next:focus {
+    background-color: var(--main-black);
+    opacity: 0.3;
+}
+

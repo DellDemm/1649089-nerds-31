@@ -1,57 +1,58 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="catalog">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy:Нёрдс</title>
     <link rel="icon" href="favicon.ico">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body>
-  	<header>
-  		<nav>
-        <a href="index.html">
+  <body class="catalog-body">
+  	<header class="catalog-header">
+  		<nav class="catalog-nav">
+        <a href="index.html" class="catalog-header-logo">
           <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип компании Nёrds">
         </a>
-  			<ul>
-  				<li><a href="index.html">Студия</a></li>
-  				<li><a href="blank.html">Клиенты</a></li>
-  				<li><a href="#">Магазин</a></li>
-  				<li><a href="blank.html">Контакты</a></li> 
-  			</ul>
-        <ul>
-          <li>
-            <a href="blank.html">
-              <img src="img/Shape.svg" width="15" height="11" alt="иконка корзины">
-              Корзина
-            </a>
-          </li>
-        </ul>
+  			<ul class="cite-navigation">
+  				<li><a href="index.html" class="links">Студия</a></li>
+  				<li><a href="blank.html" class="links">Клиенты</a></li>
+  				<li><a href="#" class="links">Магазин </a></li>
+  				<li><a href="blank.html" class="links">Контакты</a></li> 
+				<li>
+					<a href="blank.html" class="basket links">
+						<img src="img/Shape.svg" width="15" height="11" alt="иконка корзины">
+						Корзина
+					</a>
+				</li>
+			</ul>
   		</nav>
   	</header>
-  	<main>
+  	<main class="main-catalog">
   		<h1>Магазин готовых шаблонов</h1>
   	</main>
   	<section>
   		<h2>Фильтр товаров</h2>
   		<section>
-  			<h3>Стоимость:</h3>
+  			<h3 class="filters">Стоимость:</h3>
   			<input type="range" name="price" min="1500" max="15000">
   			<br>
-  			<label for="min-price">От</label>
-  			<input type="text" name="minimalprice" value="0" id="min-price">
-  			<label for="max-price">До</label>
-  			<input type="text" name="maxprice" value="15000" id="max-price">
+  			<label for="min-price" class="filter-price">От</label>
+  			<input type="text" name="minimalprice" value="0" id="min-price" class="filter-price">
+  			<label for="max-price" class="filter-price">До</label>
+  			<input type="text" name="maxprice" value="15000" id="max-price" class="filter-price">
   		</section>
   		<section>
-  			<h3>Сортировать:</h3>
-  			<ul>
+  			<h3 class="filters">Сортировать:</h3>
+  			<ul class="filter">
   				<li>
-  					<a>По цене</a>
+  					<a class="sort">По цене</a>
   				</li>
   				<li>
-  					<a href="#">По типу</a>
+  					<a href="#" class="sort">По типу</a>
   				</li>
   				<li>
-  					<a href="#">По названию</a>
+  					<a href="#" class="sort">По названию</a>
   				</li>
   			</ul>
   			<figure>
@@ -59,9 +60,9 @@
   			</figure>
   		</section>
    		<form>
-  			<fieldset>
-  				<legend>Сетка:</legend>
-  				<ul>
+  			<fieldset class="column">
+  				<legend class="grid">Сетка:</legend>
+  				<ul class="grid-filter">
   					<li>
   						<input type="radio" name="grid" id="filter-adaptiv" value="adaptiv">
   						<label for="filter-adaptiv">Адаптивная</label>
@@ -76,9 +77,9 @@
   					</li>
   				</ul>
   			</fieldset>
-  			<fieldset>
-  				<legend>Особенности:</legend>
-  				<ul>
+  			<fieldset class="column">
+  				<legend class="features">Особенности:</legend>
+  				<ul class="features-filter">
   					<li>
   						<input type="checkbox" name="slider" id="filter-slider">
   						<label for="filter-slider">Слайдер</label>
@@ -101,99 +102,98 @@
   					</li>
   				</ul>
   			</fieldset>
-  			<button type="submit">Показать</button>
+  			<button type="submit" class="button-present">Показать</button>
   		</form>
   	</section>
-  	<section>
+  	<section class="product">
   		<img src="img/projects/img-sedona.jpg" width="358" height="578" alt="Sedona project">
-  		<h2>Sedona</h2>
+  		<h2 class="name-product">Sedona</h2>
   		<p>Информационный сайт для туристов</p>
-  		<input type="button" name="buy" value="9900">
+  		<input type="button" name="buy" value="9900" class="button-buy">
   	</section>
-	<section>
+	<section class="product">
   		<img src="img/projects/img-pink.jpg" width="358" height="578" alt="Pink project">
-  		<h2>Pink App</h2>
-  		<p>Продуктовый лендинг приложения для iOS и Android</p>
-  		<input type="button" name="buy" value="9900">
+  		<h2 class="name-product">Pink App</h2>
+  		<p>Продуктовый лендингприложения для iOS и Android</p>
+  		<input type="button" name="buy" value="9900" class="button-buy">
   	</section>
-  	<section>
+  	<section class="product">
   		<img src="img/projects/img-barbershop.jpg" width="358" height="578" alt="Borodinskiy project">
-  		<h2>Barbershop</h2>
-  		<p>Сайт салона красоты. Для мужчин, да.</p>
-  		<input type="button" name="buy" value="9900">
+  		<h2 class="name-product">Barbershop</h2>
+  		<p>Сайт салона красоты.Для мужчин, да.</p>
+  		<input type="button" name="buy" value="9900" class="button-buy">
   	</section>
-  	<section>
+  	<section class="product">
   		<img src="img/projects/img-mishka.jpg" width="358" height="578" alt="Mishka project">
-  		<h2>MISHKA</h2>
-  		<p>Интернет-магазин  вязаных игрушек</p>
-  		<input type="button" name="buy" value="9900">
+  		<h2 class="name-product">MISHKA</h2>
+  		<p>Интернет-магазин вязаных игрушек</p>
+  		<input type="button" name="buy" value="9900" class="button-buy">
   	</section>
-  	<section>
+  	<section class="product">
   		<img src="img/projects/img-aplus.jpg" width="358" height="578" alt="A+ project">
-  		<h2>A Plus</h2>
+  		<h2 class="name-product">A Plus</h2>
   		<p>Лендинг курсов повышения квалификации</p>
-  		<input type="button" name="buy" value="9900">
+  		<input type="button" name="buy" value="9900" class="button-buy">
   	</section>
-  	<section>
+  	<section class="product">
   		<img src="img/projects/img-kvast.jpg" width="358" height="578" alt="Craft kvass project">
-  		<h2>КВАСТ</h2>
-  		<p>Промо-сайт производителя крафтового кваса</p>
-  		<input type="button" name="buy" value="9900">
+  		<h2 class="name-product">КВАСТ</h2>
+  		<p>Промо-сайт производителякрафтового кваса</p>
+  		<input type="button" name="buy" value="9900" class="button-buy">
   	</section>
   	<section>
-  		<ul>
-  			<li>
-  				<a>1</a>
+  		<ul  class="shop-pages">
+  			<li class="shop-page">
+  				<a class="links">1</a>
   			</li>
-  			<li>
-  				<a href="#">2</a>
+  			<li class="shop-page">
+  				<a href="#" class="links">2</a>
   			</li>
-  			<li>
-  				<a href="#">3</a>
+  			<li class="shop-page">
+  				<a href="#" class="links">3</a>
   			</li>
-  			<li>
-  				<a href="#">Следующая</a>
+  			<li class="shop-page-next">
+  				<a href="#" class="links">Следующая</a>
   			</li>
   		</ul> 		
   	</section>
-	<section>
-     <img src="img/map.png" width="1440" height="416" alt="Карта на которой показанно расположение студии Нёрдс">
-
-    </section>
-    <section>
-      <h2>Контакты</h2>
-      <h3>NЁRDS DESIGN STUDIO</h3>
-      <p>наб. Реки Карповки,<br>
-       5 лит П, Санкт-Петербург<br>
-      <a href="  tel:+78005558628">+7 800 555-86-28</a></p>
-      <input type="button" name="sent-messeg" value="Напишите нам">
-    </section>
-    <footer>
-      <section>
-        <ul>
-          <li>
-            <a href="#">              
-              <img src="img/social/vk.svg" width="81" height="81" alt="Наш Вконтакте">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/social/fb.svg" width="81" height="81" alt="Наш Facebook">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/social/insta.svg" width="81" height="81" alt="Наш инстаграмм">
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section>
-      <div>
-        <h2>Давайте дружить, это выгодно!</h2>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-      </div>
-      </section>
-   </footer>
+	<footer class="main-footer">
+		<section class="map">
+		  <img src="img/map.png" width="1440" height="416" alt="Карта на которой показанно расположение студии Нёрдс">
+		</section>
+		<section class="footer-contacts">
+		  <h2>Контакты</h2>
+		  <h3>NЁRDS DESIGN STUDIO</h3>
+		  <p class="address">наб. Реки Карповки,<br>
+		   5 лит П, Санкт-Петербург<br>
+		  <a href="tel:+78005558628" class="footer-phone links">+7 800 555-86-28</a></p>
+		  <input type="button" name="send-messeg" value="Напишите нам" class="button-send">
+		</section>
+		<section>
+		  <ul class="social">
+			<li>
+			  <a href="#"  class="social-button">Вконтакте              
+				<img src="img/social/vk.svg" width="81" height="81" alt="Наш Вконтакте">
+			  </a>
+			</li>
+			<li>
+			  <a href="#"  class="social-button">Facebook
+				<img src="img/social/fb.svg" width="81" height="81" alt="Наш Facebook">
+			  </a>
+			</li>
+			<li>
+			  <a href="#" class="social-button">Instagram
+				<img src="img/social/insta.svg" width="81" height="81" alt="Наш инстаграмм">
+			  </a>
+			</li>
+		  </ul>
+		</section>
+		<section class="friends">
+		<div>
+		  <h2 class="friends-follow">Давайте дружить, это выгодно!</h2>
+		  <p class="text-footer">Скидка 10% для друзей из социальных сетей.</p>
+		</div>
+		</section>
+	</footer>
   </body>
 </html>
