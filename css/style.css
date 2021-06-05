@@ -71,7 +71,8 @@ background-color: var(--white);
     font-weight: 500;
 }
 
-.services-list {
+.services-list,
+.shop-pages {
     list-style: none;
 }
 
@@ -368,10 +369,6 @@ background-color: var(--white);
 
 .button-buy:focus {
     background: var(--red);
-}
-
-.shop-pages {
-    list-style: none;
 }
 
 .shop-pages a {
