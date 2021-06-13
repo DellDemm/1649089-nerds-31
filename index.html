@@ -18,14 +18,14 @@
   				<li><a href="index.html" class="links">Студия</a></li>
   				<li><a href="blank.html" class="links">Клиенты</a></li>
   				<li><a href="catalog.html" class="links">Магазин</a></li>
-  				<li><a href="blank.html" class="links">Контакты</a></li> 
-          <li>
-            <a href="blank.html" class="basket links">
-              <img src="img/Shape.svg" width="15" height="11" alt="иконка корзины">
-              Корзина
-            </a>
-          </li>
-        </ul>
+  				<li><a href="blank.html" class="links">Контакты</a></li>  
+        </ul>  
+        <div class="basket-user">
+          <a href="blank.html" class="basket links">
+            <img src="img/Shape.svg" width="15" height="11" alt="иконка корзины">
+            Корзина
+          </a>
+        </div>
   		</nav>
       <section class="slider">
         <h1>Долго, дорого, скрупулезно.</h1>
@@ -144,18 +144,26 @@
       </section>
    </footer>
    <section class="feedback">
-    <h2>Напишите нам</h2>
-    <form action="https://echo.htmlacademy.ru/courses" method="get">
-      <label>Ваше имя:
-        <input type="text" name="user-name" id="name" value="Имя Фамилия">
-      </label>
-      <label>Ваш email:
-        <input type="email" name="user-email" id="email" value="email@example.com">
-      </label>
-      <label>Текст письма:
-        <textarea name="appeal" id="messeg" cols="30" rows="10" >В свободной форме</textarea>
-      </label><br>
-      <input type="submit" name="send-messeg" value="Отправить" class="button button-send-footer">
+    <h2 class="feedback-title">Напишите нам</h2>
+    <form action="https://echo.htmlacademy.ru/courses" method="get" class="feedback-form">
+      <div class="name-form">
+        <label>Ваше имя:
+          <input type="text" name="user-name" id="name" value="Имя Фамилия">
+        </label>
+      </div>
+      <div class="email-form"> 
+        <label>Ваш email:
+          <input type="email" name="user-email" id="email" value="email@example.com">
+        </label>
+      </div>
+      <div class="messeg-form">
+        <label>Текст письма:
+          <textarea name="appeal" id="messeg" cols="30" rows="10" >В свободной форме</textarea>
+        </label><br>
+      </div>
+      <div class="button-form">
+        <input type="submit" name="send-messeg" value="Отправить" class="button button-send-footer">
+      </div>
     </form>
    </section>
   </body>
