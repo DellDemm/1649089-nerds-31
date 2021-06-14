@@ -11,11 +11,12 @@
 --khaki: #EAB534;
 --dark-khaki:#E5A722;
 --grey:#666666;
---white:#FFFFFF;
+--white:rgba(255, 255, 255, 1);
 --black:#4D4D4D;
 --main-gray:#DFDFDF;
 --main-black:#D5D5D5;
 --background-white: #EEEEEE;
+--white03:rgba(255, 255, 255, 0.3);
 
 }
 
@@ -61,6 +62,14 @@ body {
 .cite-navigation {
     margin: 0px;
     padding: 0px;
+}
+
+.header-logo:hover {
+    opacity: 0.7;
+}
+
+.header-logo:focus {
+    opacity: 0.3;
 }
 
 .cite-navigation .links {
@@ -113,6 +122,8 @@ body {
 .button {
     width: 160px;
     height: 50px;
+    color: var(--white);
+    border-radius: 3px;
 }
 .slider-button {
     width: 240px;
@@ -134,6 +145,7 @@ body {
 
 .slider-button:focus {
     background-color: var(--red);
+    color: var(--white03);
 }
 
 .button-site:link {
@@ -150,6 +162,7 @@ body {
 
 .button-site:focus {
     background-color: var(--red);
+    color: var(--white03);
 }
 
 .button-app {
@@ -170,6 +183,7 @@ body {
 
 .button-app:focus {
     background-color: var(--limegreen);
+    color: var(--white03);
 }
 
 .button-pres {
@@ -190,6 +204,7 @@ body {
 
 .button-pres:focus {
     background-color: var(--dark-khaki);
+    color: var(--white03);
 }
 
 .company-info .title-info {
@@ -208,6 +223,22 @@ body {
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
+}
+
+.partners-links:link {
+    opacity: 0.2;
+}
+
+.partners-links:visited {
+    opacity: 0.2;
+}
+
+.partners-links:hover {
+    opacity: 1;
+}
+
+.partners-links:focus {
+    opacity: 0.1;
 }
 
 .footer-contacts {

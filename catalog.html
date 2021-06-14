@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="ru" class="catalog">
   <head>
-    <meta charset="utf-8">
-    <title>HTML Academy:Нёрдс</title>
-    <link rel="icon" href="favicon.ico">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+	<title>HTML Academy:Нёрдс</title>
+	<link rel="icon" href="favicon.ico">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class="catalog-body">
-  	<header class="catalog-header">
+  	<header class="catalog-header container">
   		<nav class="catalog-nav">
-        <a href="index.html" class="catalog-header-logo">
-          <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип компании Nёrds">
-        </a>
+        	<a href="index.html" class="header-logo catalog-header-logo">
+          		<img src="img/nerds-logo.png" width="160" height="66" alt="Логотип компании Nёrds">
+        	</a>
   			<ul class="cite-navigation">
   				<li><a href="index.html" class="links">Студия</a></li>
   				<li><a href="blank.html" class="links">Клиенты</a></li>
   				<li><a href="#" class="links">Магазин </a></li>
   				<li><a href="blank.html" class="links">Контакты</a></li> 
-				<li>
-					<a href="blank.html" class="basket links">
-						<img src="img/Shape.svg" width="15" height="11" alt="иконка корзины">
-						Корзина
-					</a>
-				</li>
-			</ul>
+			</ul>	
+			<div class="basket-user">
+				<a href="blank.html" class="basket links">
+					<img src="img/Shape.svg" width="15" height="11" alt="иконка корзины">
+					Корзина
+				</a>
+			</div>
   		</nav>
   	</header>
-  	<main class="main-catalog">
-  		<h1>Магазин готовых шаблонов</h1>
+  	<main class="main-catalog container">
+  		<h1 class="title-shop">Магазин готовых шаблонов</h1>
   	</main>
-  	<section>
+  	<section class="container">
   		<h2>Фильтр товаров</h2>
   		<section>
   			<h3 class="filters">Стоимость:</h3>
@@ -105,7 +105,7 @@
   			<button type="submit" class="button-present">Показать</button>
   		</form>
   	</section>
-  	<section class="product">
+  	<section class="product container">
   		<img src="img/projects/img-sedona.jpg" width="358" height="578" alt="Sedona project">
   		<h2 class="name-product">Sedona</h2>
   		<p>Информационный сайт для туристов</p>
@@ -141,8 +141,8 @@
   		<p>Промо-сайт производителякрафтового кваса</p>
   		<input type="button" name="buy" value="9900" class="button-buy">
   	</section>
-  	<section>
-  		<ul  class="shop-pages">
+  	<section class="container">
+  		<ul  class="shop-pages-list">
   			<li class="shop-page">
   				<a class="links">1</a>
   			</li>
@@ -170,25 +170,25 @@
 		  <input type="button" name="send-messeg" value="Напишите нам" class="button-send">
 		</section>
 		<section>
-		  <ul class="social">
+		  <ul class="social container">
 			<li>
-			  <a href="#"  class="social-button">Вконтакте              
+			  <a href="#"  class="social-button">             
 				<img src="img/social/vk.svg" width="81" height="81" alt="Наш Вконтакте">
 			  </a>
 			</li>
 			<li>
-			  <a href="#"  class="social-button">Facebook
+			  <a href="#"  class="social-button">
 				<img src="img/social/fb.svg" width="81" height="81" alt="Наш Facebook">
 			  </a>
 			</li>
 			<li>
-			  <a href="#" class="social-button">Instagram
+			  <a href="#" class="social-button">
 				<img src="img/social/insta.svg" width="81" height="81" alt="Наш инстаграмм">
 			  </a>
 			</li>
 		  </ul>
 		</section>
-		<section class="friends">
+		<section class="friends container">
 		<div>
 		  <h2 class="friends-follow">Давайте дружить, это выгодно!</h2>
 		  <p class="text-footer">Скидка 10% для друзей из социальных сетей.</p>
