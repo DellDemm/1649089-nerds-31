@@ -20,16 +20,22 @@
 }
 
 body {
-min-width: 1440px;
-margin: 0;
-padding: 0;
-font-family:"Roboto", Arial, sans-serif;
-font-size: 16px;
-line-height: 24px;
-font-weight: 400;
-text-transform: uppercase;
-background-color: var(--white);
-height: 100%;
+    min-width: 1440px;
+    margin: 0;
+    padding: 0;
+    font-family:"Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: var(--white);
+    height: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0;
+    width: 1160px;
 }
 
 .page-body {
@@ -50,11 +56,6 @@ height: 100%;
     color: var(--classic-black);
     display: grid;
     grid-template-columns: min-content 1fr min-content;
-    margin-right: 140px;
-}
-
-.main-header {
-    margin-left: 140px;
 }
 
 .cite-navigation {
@@ -62,41 +63,45 @@ height: 100%;
     padding: 0px;
 }
 
-.cite-navigation li {
-    list-style: none;
+.cite-navigation .links {
     color: var(--classic-black);
 }
 
-.cite-navigation a:link,
-.basket-user a:link {
+.cite-navigation .links:link,
+.basket-user .links:link {
     color: var(--classic-black);
 }
 
-.cite-navigation a:visited,
-.basket-user a:visited  {
+.cite-navigation .links:visited,
+.basket-user .links:visited  {
     color: var(--classic-black);
 }
 
-.cite-navigation a:hover,
-.basket-user a:hover {
+.cite-navigation .links:hover,
+.basket-user .links:hover {
     color: var(--coral);
 }
 
-.cite-navigation a:focus,
-.basket-user a:focus {
+.cite-navigation .links:focus,
+.basket-user .links:focus {
     color: var(--classic-black);
     opacity: 0.3;
     text-decoration: underline;
 }
 
-.slider h1 {
+.slider .title {
     font-size: 55px;
     line-height: 50px;
     font-weight: 500;
 }
 
 .services-list,
-.shop-pages {
+.shop-pages,
+.cite-navigation,
+.filter,
+.grid-filter,
+.features-filter,
+.social {
     list-style: none;
 }
 
@@ -272,7 +277,7 @@ height: 100%;
     grid-row: 1/2;
 }
 
-.messeg-form {
+.message-form {
     grid-column: 1/-1;
     grid-row: 2/3;
 }
@@ -313,7 +318,6 @@ height: 100%;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
-    list-style: none;
     color: var(--classic-black);
 }
 
@@ -349,7 +353,6 @@ height: 100%;
 
 .grid-filter,
 .features-filter {
-   list-style: none;
    font-size: 16px;
    line-height: 20px;
    font-weight: 400;
