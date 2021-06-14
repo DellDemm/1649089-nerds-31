@@ -96,7 +96,7 @@ body {
 }
 
 .services-list,
-.shop-pages,
+.shop-pages-list,
 .cite-navigation,
 .filter,
 .grid-filter,
@@ -105,7 +105,7 @@ body {
     list-style: none;
 }
 
-.services-list h3 {
+.services-list .services-title {
     font-size: 24px;
     line-height: 30px;
 }
@@ -192,7 +192,7 @@ body {
     background-color: var(--dark-khaki);
 }
 
-.company-info h2 {
+.company-info .title-info {
     font-size: 45px;
     line-height: 45px;
     font-weight: 500;
@@ -255,7 +255,7 @@ body {
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
 }
 
-.feedback h2 {
+.feedback .feedback-title {
     font-size: 45px;
     line-height: 53px;
     font-weight: 700;
@@ -289,6 +289,12 @@ body {
 
 .button-send-footer {
     background-color: var(--coral);
+}
+
+.title-shop {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
 }
 
 .main-catalog {
@@ -431,7 +437,7 @@ body {
     background: var(--red);
 }
 
-.shop-pages a {
+.shop-pages .links {
     text-decoration: none;
 }
 
