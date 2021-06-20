@@ -80,6 +80,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    width: 860px;
 }
 
 .cite-navigation:last-child {
@@ -140,7 +141,7 @@ body {
 .services-list,
 .shop-pages-list,
 .cite-navigation,
-.filter,
+.filter-list,
 .grid-filter,
 .features-filter,
 .social {
@@ -379,7 +380,7 @@ body {
     justify-content: center;
     width: 81px;
     height: 81px;
-    background: linear-gradient(0deg, var(--back-grey),var(--back-grey))), var(--white);
+    background: linear-gradient(0deg, var(--back-grey),var(--back-grey)), var(--white);
     border-radius:50%;
 }
 
@@ -476,6 +477,9 @@ body {
     font-weight: 500;
     font-size: 55px;
     line-height: 55px;
+    text-align: center;
+    margin-top: 78px;
+    margin-bottom: 108px;
 }
 
 .main-catalog {
@@ -488,6 +492,7 @@ body {
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .filter-price {
@@ -499,6 +504,7 @@ body {
     border-radius: 3px;
     border-color: var(--white);
     box-shadow:var(--white);
+    width: 400px;
 }
 
 .filter {
@@ -530,12 +536,24 @@ body {
 
 .column {
     border: none;
+    margin: 0;
+    padding:0;
+}
+
+.grid {
+    margin-top: 54px;
+}
+
+.features {
+    margin-top: 43px;
 }
 
 .grid, .features {
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 16px;
 }
 
 .grid-filter,
@@ -544,6 +562,8 @@ body {
    line-height: 20px;
    font-weight: 400;
    color: var(--classic-gray);
+   margin: 0;
+   padding: 0;
 }
 
 .grid-filter:link,
@@ -567,6 +587,7 @@ body {
     line-height: 18px;
     width: 260px;
     height: 50px;
+    margin-top:28px; 
 }
 
 .button-present:link,
@@ -588,7 +609,11 @@ body {
     line-height: 18px;
     font-weight: 400;
     color: var(--grey);
+    min-height: 360px;
+    width: 358px;
+    margin-bottom: 32px;
 }
+
 
 .name-product {
     font-size: 18px;
@@ -630,6 +655,7 @@ body {
     background-color:var(--background-white);
     text-align: center;
     line-height: 50px;
+    margin-right: 11px;
 }
 
 .shop-page-next {
@@ -668,7 +694,85 @@ body {
 }
 
 .catalog-nav {
-    display:grid;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--classic-black);
+    display: grid;
     grid-template-columns: min-content 1fr min-content;
+    margin-top: 49px;
 }
 
+.basket-user {
+    width: 130px;
+}
+
+.catalog-header-logo {
+    width: 160px;
+}
+
+.catalog-header {
+    margin-top: 48px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns:repeat(12, 60px);
+    grid-column-gap: 40px;
+    grid-template-rows: 30px 1fr;
+    grid-row-gap: 40px;
+}
+
+.filters-wrapper {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.catalog-wrapper {
+    grid-column: 5/-1;
+    grid-row: 2/-1;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    width: 758px;
+    justify-content: space-between;
+}
+
+.catalog-wrapper:nth-child(2n) {
+    margin-right: 0;
+}
+
+.inner-wrapper {
+    display: flex;
+}
+
+.filter {
+    display: flex;
+}
+
+.filters-title {
+    margin-right: 266px;
+}
+
+.filter-list {
+    display: flex;
+    margin: auto;
+    padding: 0;
+    align-content: center;
+    width: 272px;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.grid-item,
+.features-item {
+    margin-bottom: 20px;
+    margin-left: 11px;
+}
+
+.shop-pages-list {
+    display: flex;
+    justify-content: center;
+}

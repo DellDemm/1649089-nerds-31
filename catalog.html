@@ -15,10 +15,10 @@
           		<img src="img/nerds-logo.png" width="160" height="66" alt="Логотип компании Nёrds">
         	</a>
   			<ul class="cite-navigation">
-  				<li><a href="index.html" class="links">Студия</a></li>
-  				<li><a href="blank.html" class="links">Клиенты</a></li>
-  				<li><a href="#" class="links">Магазин </a></li>
-  				<li><a href="blank.html" class="links">Контакты</a></li> 
+  				<li><a href="index.html" class="nav-item links">Студия</a></li>
+  				<li><a href="blank.html" class="nav-item links">Клиенты</a></li>
+  				<li><a href="#" class="nav-item links">Магазин </a></li>
+  				<li><a href="blank.html" class="nav-item links">Контакты</a></li> 
 			</ul>	
 			<div class="basket-user">
 				<a href="blank.html" class="basket links">
@@ -31,117 +31,114 @@
   	<main class="main-catalog container">
   		<h1 class="title-shop">Магазин готовых шаблонов</h1>
   	</main>
-  	<section class="container">
-  		<h2>Фильтр товаров</h2>
-  		<section>
-  			<h3 class="filters">Стоимость:</h3>
-  			<input type="range" name="price" min="1500" max="15000">
-  			<br>
-  			<label for="min-price" class="filter-price">От</label>
-  			<input type="text" name="minimalprice" value="0" id="min-price" class="filter-price">
-  			<label for="max-price" class="filter-price">До</label>
-  			<input type="text" name="maxprice" value="15000" id="max-price" class="filter-price">
-  		</section>
-  		<section>
-  			<h3 class="filters">Сортировать:</h3>
-  			<ul class="filter">
-  				<li>
-  					<a class="sort">По цене</a>
-  				</li>
-  				<li>
-  					<a href="#" class="sort">По типу</a>
-  				</li>
-  				<li>
-  					<a href="#" class="sort">По названию</a>
-  				</li>
-  			</ul>
-  			<figure>
-  				<img src="img/arrow.svg" width="11" height="10" alt="Кнопка настройки фильтра">
-  			</figure>
-  		</section>
-   		<form>
-  			<fieldset class="column">
+	<div class="wrapper container">
+  		<div class="filters-wrapper container">
+  			<h2 class="visually-hidden">Фильтр товаров</h2>
+			  	<div class="inner-wrapper">
+  					<section class="filter-price">
+  						<h3 class="filters">Стоимость:</h3>
+  					</section>
+  					<section class="filter">
+  						<h3 class="filters filters-title">Сортировать:</h3>
+  						<ul class="filter-list">
+  							<li>
+  								<a class="sort">По цене</a>
+  							</li>
+  							<li>
+  								<a href="#" class="sort">По типу</a>
+  							</li>
+  							<li>
+  								<a href="#" class="sort">По названию</a>
+  							</li>
+  						</ul>
+  					</section>
+				</div>
+   			<form>
+  				<fieldset class="column">
   				<legend class="grid">Сетка:</legend>
-  				<ul class="grid-filter">
-  					<li>
-  						<input type="radio" name="grid" id="filter-adaptiv" value="adaptiv">
-  						<label for="filter-adaptiv">Адаптивная</label>
-  					</li>
-  					<li>
-  						<input type="radio" name="grid" id="filter-fixed" value="fixed">
-  						<label for="filter-fixed">Фиксированная</label>
-  					</li>
-  					<li>
-  						<input type="radio" name="grid" id="filter-rubber" value="rubber">
-  						<label for="filter-rubber">Резиновая</label>
-  					</li>
-  				</ul>
-  			</fieldset>
-  			<fieldset class="column">
+  					<ul class="grid-filter">
+  						<li class="grid-item">
+  							<input type="radio" name="grid" id="filter-adaptiv" value="adaptiv">
+  							<label for="filter-adaptiv">Адаптивная</label>
+  						</li>
+  						<li class="grid-item">
+  							<input type="radio" name="grid" id="filter-fixed" value="fixed">
+  							<label for="filter-fixed">Фиксированная</label>
+  						</li>
+  						<li class="grid-item">
+  							<input type="radio" name="grid" id="filter-rubber" value="rubber">
+  							<label for="filter-rubber">Резиновая</label>
+  						</li>
+  					</ul>
+  				</fieldset>
+  				<fieldset class="column">
   				<legend class="features">Особенности:</legend>
-  				<ul class="features-filter">
-  					<li>
-  						<input type="checkbox" name="slider" id="filter-slider">
-  						<label for="filter-slider">Слайдер</label>
-  					</li>
-  					<li>
-  						<input type="checkbox" name="advantages-block" id="filter-advantages-block">
-  						<label for="filter-advantages-block">Блок приемущиств</label>
-  					</li>
-  					<li>
-  						<input type="checkbox" name="news" id="filter-news">
-  						<label for="filter-news">Новости</label>
-  					</li>
-  					<li>
-  						<input type="checkbox" name="gallery" id="filter-gallery">
-  						<label for="filter-gallery">Галерея</label>
-  					</li>
-  					<li>
-  						<input type="checkbox" name="basket" id="filter-basket">
-  						<label for="filter-basket">Корзина</label>
-  					</li>
-  				</ul>
-  			</fieldset>
-  			<button type="submit" class="button-present">Показать</button>
-  		</form>
-  	</section>
-  	<section class="product container">
-  		<img src="img/projects/img-sedona.jpg" width="358" height="578" alt="Sedona project">
-  		<h2 class="name-product">Sedona</h2>
-  		<p>Информационный сайт для туристов</p>
-  		<input type="button" name="buy" value="9900" class="button-buy">
-  	</section>
-	<section class="product">
-  		<img src="img/projects/img-pink.jpg" width="358" height="578" alt="Pink project">
-  		<h2 class="name-product">Pink App</h2>
-  		<p>Продуктовый лендингприложения для iOS и Android</p>
-  		<input type="button" name="buy" value="9900" class="button-buy">
-  	</section>
-  	<section class="product">
-  		<img src="img/projects/img-barbershop.jpg" width="358" height="578" alt="Borodinskiy project">
-  		<h2 class="name-product">Barbershop</h2>
-  		<p>Сайт салона красоты.Для мужчин, да.</p>
-  		<input type="button" name="buy" value="9900" class="button-buy">
-  	</section>
-  	<section class="product">
-  		<img src="img/projects/img-mishka.jpg" width="358" height="578" alt="Mishka project">
-  		<h2 class="name-product">MISHKA</h2>
-  		<p>Интернет-магазин вязаных игрушек</p>
-  		<input type="button" name="buy" value="9900" class="button-buy">
-  	</section>
-  	<section class="product">
-  		<img src="img/projects/img-aplus.jpg" width="358" height="578" alt="A+ project">
-  		<h2 class="name-product">A Plus</h2>
-  		<p>Лендинг курсов повышения квалификации</p>
-  		<input type="button" name="buy" value="9900" class="button-buy">
-  	</section>
-  	<section class="product">
-  		<img src="img/projects/img-kvast.jpg" width="358" height="578" alt="Craft kvass project">
-  		<h2 class="name-product">КВАСТ</h2>
-  		<p>Промо-сайт производителякрафтового кваса</p>
-  		<input type="button" name="buy" value="9900" class="button-buy">
-  	</section>
-  	<section class="container">
+  					<ul class="features-filter">
+  						<li class="features-item">
+  							<input type="checkbox" name="slider" id="filter-slider">
+  							<label for="filter-slider">Слайдер</label>
+  						</li>
+  						<li class="features-item">
+  							<input type="checkbox" name="advantages-block" id="filter-advantages-block">
+  							<label for="filter-advantages-block">Блок приемущиств</label>
+  						</li>
+  						<li class="features-item">
+  							<input type="checkbox" name="news" id="filter-news">
+  							<label for="filter-news">Новости</label>
+  						</li>
+  						<li class="features-item">
+  							<input type="checkbox" name="gallery" id="filter-gallery">
+  							<label for="filter-gallery">Галерея</label>
+  						</li>
+  						<li class="features-item">
+  							<input type="checkbox" name="basket" id="filter-basket">
+  							<label for="filter-basket">Корзина</label>
+  						</li>
+  					</ul>
+  				</fieldset>
+  				<button type="submit" class="button-present">Показать</button>
+  			</form>
+		</div>
+		<div class="catalog-wrapper">  
+  			<section class="product">
+  				<img src="img/projects/img-sedona.jpg" width="358" height="578" alt="Sedona project">
+  				<h2 class="name-product">Sedona</h2>
+  				<p>Информационный сайт для туристов</p>
+  				<input type="button" name="buy" value="9900" class="button-buy">
+  			</section>
+			<section class="product">
+  				<img src="img/projects/img-pink.jpg" width="358" height="578" alt="Pink project">
+  				<h2 class="name-product">Pink App</h2>
+  				<p>Продуктовый лендингприложения для iOS и Android</p>
+  				<input type="button" name="buy" value="9900" class="button-buy">
+  			</section>
+  			<section class="product">
+  				<img src="img/projects/img-barbershop.jpg" width="358" height="578" alt="Borodinskiy project">
+  				<h2 class="name-product">Barbershop</h2>
+  				<p>Сайт салона красоты.Для мужчин, да.</p>
+  				<input type="button" name="buy" value="9900" class="button-buy">
+  			</section>
+  			<section class="product">
+  				<img src="img/projects/img-mishka.jpg" width="358" height="578" alt="Mishka project">
+  				<h2 class="name-product">MISHKA</h2>
+  				<p>Интернет-магазин вязаных игрушек</p>
+  				<input type="button" name="buy" value="9900" class="button-buy">
+  			</section>
+  			<section class="product">
+  				<img src="img/projects/img-aplus.jpg" width="358" height="578" alt="A+ project">
+  				<h2 class="name-product">A Plus</h2>
+  				<p>Лендинг курсов повышения квалификации</p>
+  				<input type="button" name="buy" value="9900" class="button-buy">
+  			</section>
+  			<section class="product">
+  				<img src="img/projects/img-kvast.jpg" width="358" height="578" alt="Craft kvass project">
+  				<h2 class="name-product">КВАСТ</h2>
+  				<p>Промо-сайт производителякрафтового кваса</p>
+  				<input type="button" name="buy" value="9900" class="button-buy">
+  			</section>
+		</div>
+	</div>
+  	<section class="pagination container">
   		<ul  class="shop-pages-list">
   			<li class="shop-page">
   				<a class="links">1</a>
@@ -169,31 +166,33 @@
 		  <a href="tel:+78005558628" class="footer-phone links">+7 800 555-86-28</a></p>
 		  <input type="button" name="send-messeg" value="Напишите нам" class="button-send">
 		</section>
-		<section>
-		  <ul class="social container">
-			<li>
-			  <a href="#"  class="social-button">             
-				<img src="img/social/vk.svg" width="81" height="81" alt="Наш Вконтакте">
-			  </a>
-			</li>
-			<li>
-			  <a href="#"  class="social-button">
-				<img src="img/social/fb.svg" width="81" height="81" alt="Наш Facebook">
-			  </a>
-			</li>
-			<li>
-			  <a href="#" class="social-button">
-				<img src="img/social/insta.svg" width="81" height="81" alt="Наш инстаграмм">
-			  </a>
-			</li>
-		  </ul>
-		</section>
-		<section class="friends container">
-		<div>
-		  <h2 class="friends-follow">Давайте дружить, это выгодно!</h2>
-		  <p class="text-footer">Скидка 10% для друзей из социальных сетей.</p>
+		<div class="footer-social container">
+			<section class="social">
+			  <ul class="social-list">
+				<li class="social-item">
+				  <a href="#"  class="social-button">             
+					<img src="img/social/vk.svg" width="26" height="15" alt="Наш Вконтакте" class="footer-img">
+				  </a>
+				</li>
+				<li class="social-item">
+				  <a href="#"  class="social-button">
+					<img src="img/social/fb.svg" width="12" height="22" alt="Наш Facebook" class="footer-img">
+				  </a>
+				</li>
+				<li class="social-item">
+				  <a href="#" class="social-button">
+					<img src="img/social/insta.svg" width="21" height="21" alt="Наш инстаграмм" class="footer-img">
+				  </a>
+				</li>
+			  </ul>
+			</section>
+			<section class="friends container">
+			  <div>
+				<h2 class="friends-follow">Давайте дружить, это выгодно!</h2>
+				<p class="text-footer">Скидка 10% для друзей из социальных сетей.</p>
+			  </div>
+			</section>
 		</div>
-		</section>
 	</footer>
   </body>
 </html>
