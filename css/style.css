@@ -17,7 +17,7 @@
 --main-black:#D5D5D5;
 --background-white: #EEEEEE;
 --white03:rgba(255, 255, 255, 0.3);
-
+--back-grey: #E1E1E1;
 }
 
 body {
@@ -49,7 +49,7 @@ body {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}
 
 .page-body {
     min-height: 100%;
@@ -153,6 +153,11 @@ body {
     text-transform: uppercase;
 }
 
+.services {
+    margin-top: 73px;
+    margin-bottom: 80px;
+}
+
 .title-order,
 .title-table {
     text-transform: uppercase;
@@ -163,6 +168,7 @@ body {
     height: 50px;
     color: var(--white);
     border-radius: 3px;
+    border:none;
 }
 .slider-button {
     width: 240px;
@@ -188,6 +194,8 @@ body {
 }
 
 .services-list {
+    margin: 0px;
+    padding: 0px;
     display: flex;
     justify-content: space-between;
 }
@@ -371,16 +379,16 @@ body {
     justify-content: center;
     width: 81px;
     height: 81px;
-    background: linear-gradient(0deg, #E1E1E1, #E1E1E1), var(--white);
+    background: linear-gradient(0deg, var(--back-grey),var(--back-grey))), var(--white);
     border-radius:50%;
 }
 
 .social-button:hover {
-    background: linear-gradient(0deg, #E74246, #E74246), var(--white);
+    background: linear-gradient(0deg, var(--coral-dark),var(--coral-dark)), var(--white);
 }
 
 .social-button:focus {
-    background: linear-gradient(0deg, #D7373B, #D7373B),var(--white);
+    background: linear-gradient(0deg, var(--red),var(--red)),var(--white);
 }
 
 .footer-img:link,
@@ -389,7 +397,7 @@ body {
     opacity: 1;
 }
 
-.footer-img:focus {
+.footer-img:active {
     opacity: 0.3;
 }
 
