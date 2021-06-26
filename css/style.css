@@ -767,6 +767,11 @@ body {
     background-color: var(--black);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
+    opacity: 0.12;
+}
+
+.demo-slider:hover {
+    opacity: 1;
 }
 
 .demo-button {
@@ -791,6 +796,17 @@ body {
     color: var(--classic-black);
     margin-top: 26px;
     margin-bottom: 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.name-product:hover {
+    color: var(--coral);
+}
+
+.name-product:focus {
+    color: var(--classic-black);
+    opacity: 0.3;
 }
 
 .button-buy {
