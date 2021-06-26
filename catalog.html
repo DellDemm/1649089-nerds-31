@@ -22,7 +22,6 @@
 			</ul>	
 			<div class="basket-user">
 				<a href="blank.html" class="basket links">
-					<img src="img/Shape.svg" width="15" height="11" alt="иконка корзины">
 					Корзина
 				</a>
 			</div>
@@ -36,7 +35,28 @@
   			<h2 class="visually-hidden">Фильтр товаров</h2>
 			  	<div class="inner-wrapper">
   					<section class="filter-price">
-  						<h3 class="filters">Стоимость:</h3>
+						<form method="get" action="https://echo.htmlacademy.ru">
+							<fieldset class="filter-item">
+								<legend class="filters">Стоимость:</legend>
+								<div class="range-filter">
+								  <div class="range-controls">
+									<div class="scale">
+									  <div class="bar"></div>
+									</div>
+									<div class="toggle toggle-min" tabindex="0"></div>
+									<div class="toggle toggle-max" tabindex="0"></div>
+								  </div>
+								  <div class="price-controls">
+									<label class="min-price">
+									  от <input type="number" name="min-price" value="0">
+									</label>
+									<label class="max-price">
+									  до <input type="number" name="max-price" value="15000">
+									</label>
+								  </div>
+								</div>
+							</fieldset>
+						  </form>						
   					</section>
   					<section class="filter">
   						<h3 class="filters filters-title">Сортировать:</h3>
@@ -58,16 +78,16 @@
   				<legend class="grid">Сетка:</legend>
   					<ul class="grid-filter">
   						<li class="grid-item">
-  							<input type="radio" name="grid" id="filter-adaptiv" value="adaptiv">
-  							<label for="filter-adaptiv">Адаптивная</label>
+  							<input type="radio" name="grid" id="filter-adaptiv" value="adaptiv" class="visually-hidden grid-filter-radio">
+  							<label for="filter-adaptiv" class="grid-item-label">Адаптивная</label>
   						</li>
   						<li class="grid-item">
-  							<input type="radio" name="grid" id="filter-fixed" value="fixed">
-  							<label for="filter-fixed">Фиксированная</label>
+  							<input type="radio" name="grid" id="filter-fixed" value="fixed" class="visually-hidden grid-filter-radio">
+  							<label for="filter-fixed" class="grid-item-label">Фиксированная</label>
   						</li>
   						<li class="grid-item">
-  							<input type="radio" name="grid" id="filter-rubber" value="rubber">
-  							<label for="filter-rubber">Резиновая</label>
+  							<input type="radio" name="grid" id="filter-rubber" value="rubber" class="visually-hidden grid-filter-radio">
+  							<label for="filter-rubber" class="grid-item-label">Резиновая</label>
   						</li>
   					</ul>
   				</fieldset>
@@ -75,24 +95,24 @@
   				<legend class="features">Особенности:</legend>
   					<ul class="features-filter">
   						<li class="features-item">
-  							<input type="checkbox" name="slider" id="filter-slider">
-  							<label for="filter-slider">Слайдер</label>
+  							<input type="checkbox" name="slider" id="filter-slider" class="visually-hidden features-filter-checkbox">
+  							<label for="filter-slider" class="features-item-label">Слайдер</label>
   						</li>
   						<li class="features-item">
-  							<input type="checkbox" name="advantages-block" id="filter-advantages-block">
-  							<label for="filter-advantages-block">Блок приемущиств</label>
+  							<input type="checkbox" name="advantages-block" id="filter-advantages-block" class="visually-hidden features-filter-checkbox">
+  							<label for="filter-advantages-block" class="features-item-label">Блок приемущиств</label>
   						</li>
   						<li class="features-item">
-  							<input type="checkbox" name="news" id="filter-news">
-  							<label for="filter-news">Новости</label>
+  							<input type="checkbox" name="news" id="filter-news" class="visually-hidden features-filter-checkbox">
+  							<label for="filter-news" class="features-item-label">Новости</label>
   						</li>
   						<li class="features-item">
-  							<input type="checkbox" name="gallery" id="filter-gallery">
-  							<label for="filter-gallery">Галерея</label>
+  							<input type="checkbox" name="gallery" id="filter-gallery" class="visually-hidden features-filter-checkbox">
+  							<label for="filter-gallery" class="features-item-label">Галерея</label>
   						</li>
   						<li class="features-item">
-  							<input type="checkbox" name="basket" id="filter-basket">
-  							<label for="filter-basket">Корзина</label>
+  							<input type="checkbox" name="basket" id="filter-basket" class="visually-hidden features-filter-checkbox">
+  							<label for="filter-basket" class="features-item-label">Корзина</label>
   						</li>
   					</ul>
   				</fieldset>
@@ -101,47 +121,89 @@
 		</div>
 		<div class="catalog-wrapper">  
   			<section class="product">
+				<div class="demo-slider">
+					<button class="demo-button" aria-label="Первый слайд товара"></button>
+					<button class="demo-button" aria-label="Второй слайд товара"></button>
+					<button class="demo-button" aria-label="Третий слайд товара"></button>
+				</div>
   				<img src="img/projects/img-sedona.jpg" width="358" height="578" alt="Sedona project">
-  				<h2 class="name-product">Sedona</h2>
-  				<p>Информационный сайт для туристов</p>
-  				<input type="button" name="buy" value="9900" class="button-buy">
+  				<div class="info-card">
+					<h2 class="name-product">Sedona</h2>
+  					<p class="description">Информационный сайт <br>для туристов</p>
+  					<button class="button-buy">9 900 <span>&#8381;</span></button>
+				</div>
   			</section>
 			<section class="product">
+				<div class="demo-slider">
+					<button class="demo-button" aria-label="Первый слайд товара"></button>
+					<button class="demo-button" aria-label="Второй слайд товара"></button>
+					<button class="demo-button" aria-label="Третий слайд товара"></button>
+				</div>
   				<img src="img/projects/img-pink.jpg" width="358" height="578" alt="Pink project">
-  				<h2 class="name-product">Pink App</h2>
-  				<p>Продуктовый лендингприложения для iOS и Android</p>
-  				<input type="button" name="buy" value="9900" class="button-buy">
+				<div class="info-card">
+  					<h2 class="name-product">Pink App</h2>
+  					<p class="description">Продуктовый лендин<br>гприложения для iOS и Android</p>
+  					<button class="button-buy">9 900 <span>&#8381;</span></button>
+				</div>
   			</section>
   			<section class="product">
+				<div class="demo-slider">
+					<button class="demo-button" aria-label="Первый слайд товара"></button>
+					<button class="demo-button" aria-label="Второй слайд товара"></button>
+					<button class="demo-button" aria-label="Третий слайд товара"></button>
+				</div>
   				<img src="img/projects/img-barbershop.jpg" width="358" height="578" alt="Borodinskiy project">
-  				<h2 class="name-product">Barbershop</h2>
-  				<p>Сайт салона красоты.Для мужчин, да.</p>
-  				<input type="button" name="buy" value="9900" class="button-buy">
+				<div class="info-card">
+  					<h2 class="name-product">Barbershop</h2>
+  					<p class="description">Сайт салона красоты.<br>Для мужчин, да.</p>
+  					<button class="button-buy">9 900 <span>&#8381;</span></button>
+				</div>
   			</section>
   			<section class="product">
+				<div class="demo-slider">
+					<button class="demo-button" aria-label="Первый слайд товара"></button>
+					<button class="demo-button" aria-label="Второй слайд товара"></button>
+					<button class="demo-button" aria-label="Третий слайд товара"></button>
+				</div>
   				<img src="img/projects/img-mishka.jpg" width="358" height="578" alt="Mishka project">
-  				<h2 class="name-product">MISHKA</h2>
-  				<p>Интернет-магазин вязаных игрушек</p>
-  				<input type="button" name="buy" value="9900" class="button-buy">
+				<div class="info-card">
+  					<h2 class="name-product">MISHKA</h2>
+  					<p class="description">Интернет-магазин<br>вязаных игрушек</p>
+  					<button class="button-buy">9 900 <span>&#8381;</span></button>
+				</div>
   			</section>
   			<section class="product">
+				<div class="demo-slider">
+					<button class="demo-button" aria-label="Первый слайд товара"></button>
+					<button class="demo-button" aria-label="Второй слайд товара"></button>
+					<button class="demo-button" aria-label="Третий слайд товара"></button>
+				</div>
   				<img src="img/projects/img-aplus.jpg" width="358" height="578" alt="A+ project">
-  				<h2 class="name-product">A Plus</h2>
-  				<p>Лендинг курсов повышения квалификации</p>
-  				<input type="button" name="buy" value="9900" class="button-buy">
+				<div class="info-card">
+  					<h2 class="name-product">A Plus</h2>
+  					<p class="description">Лендинг курсов повышения<br>квалификации</p>
+  					<button class="button-buy">9 900 <span>&#8381;</span></button>
+				</div>
   			</section>
   			<section class="product">
+				<div class="demo-slider">
+					<button class="demo-button" aria-label="Первый слайд товара"></button>
+					<button class="demo-button" aria-label="Второй слайд товара"></button>
+					<button class="demo-button" aria-label="Третий слайд товара"></button>
+				</div>
   				<img src="img/projects/img-kvast.jpg" width="358" height="578" alt="Craft kvass project">
-  				<h2 class="name-product">КВАСТ</h2>
-  				<p>Промо-сайт производителякрафтового кваса</p>
-  				<input type="button" name="buy" value="9900" class="button-buy">
+				<div class="info-card">
+  					<h2 class="name-product">КВАСТ</h2>
+  					<p class="description">Промо-сайт производителя<br>крафтового кваса</p>
+  					<button class="button-buy">9 900 <span>&#8381;</span></button>
+				</div>
   			</section>
 		</div>
 	</div>
   	<section class="pagination container">
   		<ul  class="shop-pages-list">
   			<li class="shop-page">
-  				<a class="links">1</a>
+  				<a class="links active">1</a>
   			</li>
   			<li class="shop-page">
   				<a href="#" class="links">2</a>
@@ -154,17 +216,17 @@
   			</li>
   		</ul> 		
   	</section>
-	<footer class="main-footer">
+	<footer class="main-footer container">
 		<section class="map">
-		  <img src="img/map.png" width="1440" height="416" alt="Карта на которой показанно расположение студии Нёрдс">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8224465563533!2d30.315220216012165!3d59.96826866667017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1624703510804!5m2!1sru!2sru" width="1440" height="416" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 		</section>
-		<section class="footer-contacts">
-		  <h2>Контакты</h2>
-		  <h3>NЁRDS DESIGN STUDIO</h3>
-		  <p class="address">наб. Реки Карповки,<br>
-		   5 лит П, Санкт-Петербург<br>
-		  <a href="tel:+78005558628" class="footer-phone links">+7 800 555-86-28</a></p>
-		  <input type="button" name="send-messeg" value="Напишите нам" class="button-send">
+		<section class="footer-contacts container">
+			<h2 class="visually-hidden">Контакты</h2>
+			<h3 class="footer-company-name">NЁRDS DESIGN STUDIO</h3>
+			<p class="address">наб. Реки Карповки,<br>
+			 5 лит П, Санкт-Петербург<br></p>
+			<a href="tel:+78005558628" class="footer-phone links">+7 800 555-86-28</a>
+			<input type="button" name="send-messeg" value="Напишите нам" class="button button-send">
 		</section>
 		<div class="footer-social container">
 			<section class="social">

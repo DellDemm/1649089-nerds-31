@@ -25,6 +25,7 @@
 --toogle-box:#cfcfcf;
 --input-color:#283136;
 --back-input:#f1f1f1;
+--pagination-border:#DBDBDB;
 }
 
 body {
@@ -757,14 +758,39 @@ body {
     min-height: 360px;
     width: 358px;
     margin-bottom: 32px;
+    position: relative;
 }
 
+.demo-slider {
+    width: 358px;
+    height: 40px;
+    background-color: var(--black);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.demo-button {
+    padding: 0;
+    width: 14px;
+    height: 14px;
+    background-color: var(--white-footer);
+    border-radius: 50%;
+    border:none;
+    margin-top: 13px;
+    margin-right: 9px;
+}
+
+.demo-slider .demo-button:first-child {
+    margin-left: 16px;
+}
 
 .name-product {
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
     color: var(--classic-black);
+    margin-top: 26px;
+    margin-bottom: 12px;
 }
 
 .button-buy {
@@ -774,6 +800,8 @@ body {
     height: 50px;
     border-radius: 3px;
     border: none;
+    margin-top: 32px;
+    margin-bottom: 44px;
 }
 
 .button-buy:link,
@@ -789,8 +817,23 @@ body {
     background: var(--red);
 }
 
+.info-card {
+    position: absolute;
+    width: 360px;
+    height: 231px;
+    text-align: center;
+    top: 390px;
+    background-color: var(--background-white);
+}
+
+.pagination {
+    margin-top: 54px;
+    margin-bottom: 60px;
+}
+
 .shop-pages .links {
     text-decoration: none;
+    border: 3px solid var(--pagination-border);
 }
 
 .shop-page {
@@ -804,6 +847,10 @@ body {
     margin-right: 11px;
 }
 
+.shop-page:first-child {
+    border: 3px solid var(--pagination-border);
+}
+
 .shop-page-next {
     width: 260px;
     height: 50px;
@@ -814,9 +861,11 @@ body {
     line-height: 50px;
 }
 
-.shop-pages .links {
+.shop-page .links,
+.shop-page-next .links {
     color: var(--classic-black);
 }
+
 
 .shop-page:link,
 .shop-page:visited {
@@ -900,11 +949,13 @@ body {
 
 .filters-title {
     margin-right: 266px;
+    margin-top: 0;
+    padding: 0px;
 }
 
 .filter-list {
     display: flex;
-    margin: auto;
+    margin-top: 0;
     padding: 0;
     align-content: center;
     width: 272px;
@@ -981,6 +1032,8 @@ body {
 .shop-pages-list {
     display: flex;
     justify-content: center;
+    margin-left: 40px;
+    color: var(--classic-black);
 }
 
 .filter-item {
@@ -1067,4 +1120,18 @@ body {
     background:var(--back-input);
     font-family: inherit;
     font-size: inherit;
+  }
+
+  .header-logo,
+  .links,
+  .button,
+  .partners-links,
+  .social-button,
+  .sort,
+  .grid-item-label,
+  .features-item-label,
+  .button-present,
+  .demo-button,
+  .button-buy {
+      cursor: pointer;
   }
