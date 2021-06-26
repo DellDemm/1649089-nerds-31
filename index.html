@@ -22,16 +22,15 @@
         </ul>  
         <div class="basket-user">
           <a href="blank.html" class="basket links">
-            <img src="img/Shape.svg" width="15" height="11" alt="иконка корзины">
             Корзина
           </a>
         </div>
   		</nav>
     <div class="slider">  
-      <section class="slide slide-1">
+      <section class="slide slide-1 slide-current">
         <div class="text-area-slide">
           <h1 class="title title-1">Долго, дорого, скрупулезно.</h1>
-          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+          <p>Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
           <input type="button" name="more-information" value="УЗНАТЬ БОЛЬШЕ" class="button slider-button">
         </div>
         <figure class="img-slide">
@@ -58,6 +57,11 @@
           <img src="img/nerds-index-slide3.jpg" width="760" height="431" alt='третья картинка слайдера'>
         </figure>
       </section>
+      <div class="slider-controls">
+        <button type="button" aria-label="Первый слайд" class="button current"></button>
+        <button type="button" aria-label="Второй слайд" class="button "></button>
+        <button type="button" aria-label="Третий слайд" class="button"></button>
+      </div>
     </div>      
   	</header>
     <section class="services container">
@@ -85,13 +89,13 @@
     </section>
     <section class="company-info container">
       <div class="info-container">
-        <h2 class="titile-info">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
+        <h2 class="title-info">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
         <h4 class="title-order">Выполняем заказы на разработку:</h4>
         <ul class="order-list">
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для iOS и Android</li>
-          <li>Слайдшоу и видео для корпоративных презентаций</li>
+          <li class="orders">Веб-сайтов любой сложности</li>
+          <li class="orders">Мобильных приложений для iOS и Android</li>
+          <li class="orders">Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
       </div>
       <div class="percent-container">
@@ -132,10 +136,10 @@
       </section>
       <section class="footer-contacts container">
         <h2 class="visually-hidden">Контакты</h2>
-        <h3>NЁRDS DESIGN STUDIO</h3>
+        <h3 class="footer-company-name">NЁRDS DESIGN STUDIO</h3>
         <p class="address">наб. Реки Карповки,<br>
-         5 лит П, Санкт-Петербург<br>
-        <a href="tel:+78005558628" class="footer-phone links">+7 800 555-86-28</a></p>
+         5 лит П, Санкт-Петербург<br></p>
+        <a href="tel:+78005558628" class="footer-phone links">+7 800 555-86-28</a>
         <input type="button" name="send-messeg" value="Напишите нам" class="button button-send">
       </section>
       <div class="footer-social container">
