@@ -661,8 +661,8 @@ body {
 }
 
 .slide-2,
-.slide-3/*,
-.modal */{
+.slide-3,
+.modal {
     display:none;
 }
 
